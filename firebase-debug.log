@@ -1,0 +1,295 @@
+[debug] [2022-11-08T02:52:14.267Z] ----------------------------------------------------------------------
+[debug] [2022-11-08T02:52:14.270Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\김석준\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-11-08T02:52:14.271Z] CLI Version:   11.16.0
+[debug] [2022-11-08T02:52:14.271Z] Platform:      win32
+[debug] [2022-11-08T02:52:14.271Z] Node Version:  v16.18.0
+[debug] [2022-11-08T02:52:14.272Z] Time:          Tue Nov 08 2022 11:52:14 GMT+0900 (대한민국 표준시)
+[debug] [2022-11-08T02:52:14.273Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-08T02:52:14.397Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-08T02:52:14.398Z] > authorizing via signed-in user (tjrwns3650@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-11-08T02:52:18.665Z] Using project from CLI flag: vueclass55
+[debug] [2022-11-08T02:52:18.671Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vueclass55 [none]
+[debug] [2022-11-08T02:52:19.157Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vueclass55 200
+[debug] [2022-11-08T02:52:19.157Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vueclass55 {"projectId":"vueclass55","projectNumber":"53819134390","displayName":"vueclass55","name":"projects/vueclass55","resources":{"hostingSite":"vueclass55"},"state":"ACTIVE","etag":"1_a4b8ef2e-49e2-4d74-9bb3-0ea1049799c6"}
+[info] i  Using project vueclass55 (vueclass55) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] i  Skipping write of dist/404.html 
+[debug] [2022-11-08T02:52:23.994Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-11-08T02:52:24.230Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-11-08T02:52:24.230Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.13.0","browserURL":"https://www.gstatic.com/firebasejs/9.13.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.13.0/firebase.tgz"},"live":{"version":"9.13","browserURL":"https://www.gstatic.com/firebasejs/live/9.13/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.13/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.13.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.13.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.13.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.13.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.13.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.13.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.13.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.13.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.memory.js"}}
+[info] i  Skipping write of dist/index.html 
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[debug] [2022-11-08T02:52:25.986Z] Error: EPERM: operation not permitted, open 'C:\firebase.json'
+    at Object.openSync (node:fs:590:3)
+    at Object.writeFileSync (node:fs:2202:35)
+    at Config.writeProjectFile (C:\Users\김석준\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:153:12)
+    at C:\Users\김석준\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\init.js:170:16
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-11-08T02:52:42.052Z] ----------------------------------------------------------------------
+[debug] [2022-11-08T02:52:42.054Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\김석준\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-11-08T02:52:42.055Z] CLI Version:   11.16.0
+[debug] [2022-11-08T02:52:42.055Z] Platform:      win32
+[debug] [2022-11-08T02:52:42.055Z] Node Version:  v16.18.0
+[debug] [2022-11-08T02:52:42.056Z] Time:          Tue Nov 08 2022 11:52:42 GMT+0900 (대한민국 표준시)
+[debug] [2022-11-08T02:52:42.056Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-08T02:52:42.149Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-08T02:52:42.150Z] > authorizing via signed-in user (tjrwns3650@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-11-08T02:52:47.242Z] Using project from CLI flag: vueclass55
+[debug] [2022-11-08T02:52:47.245Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vueclass55 [none]
+[debug] [2022-11-08T02:52:47.681Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vueclass55 200
+[debug] [2022-11-08T02:52:47.681Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vueclass55 {"projectId":"vueclass55","projectNumber":"53819134390","displayName":"vueclass55","name":"projects/vueclass55","resources":{"hostingSite":"vueclass55"},"state":"ACTIVE","etag":"1_a4b8ef2e-49e2-4d74-9bb3-0ea1049799c6"}
+[info] i  Using project vueclass55 (vueclass55) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote _dist/404.html 
+[debug] [2022-11-08T02:52:51.480Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-11-08T02:52:51.688Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-11-08T02:52:51.688Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.13.0","browserURL":"https://www.gstatic.com/firebasejs/9.13.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.13.0/firebase.tgz"},"live":{"version":"9.13","browserURL":"https://www.gstatic.com/firebasejs/live/9.13/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.13/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.13.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.13.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.13.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.13.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.13.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.13.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.13.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.13.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.memory.js"}}
+[info] +  Wrote _dist/index.html 
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[debug] [2022-11-08T02:52:51.922Z] Error: EPERM: operation not permitted, open 'C:\firebase.json'
+    at Object.openSync (node:fs:590:3)
+    at Object.writeFileSync (node:fs:2202:35)
+    at Config.writeProjectFile (C:\Users\김석준\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:153:12)
+    at C:\Users\김석준\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\init.js:170:16
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-11-08T02:54:22.668Z] ----------------------------------------------------------------------
+[debug] [2022-11-08T02:54:22.671Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\김석준\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-11-08T02:54:22.671Z] CLI Version:   11.16.0
+[debug] [2022-11-08T02:54:22.672Z] Platform:      win32
+[debug] [2022-11-08T02:54:22.672Z] Node Version:  v16.18.0
+[debug] [2022-11-08T02:54:22.673Z] Time:          Tue Nov 08 2022 11:54:22 GMT+0900 (대한민국 표준시)
+[debug] [2022-11-08T02:54:22.673Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-08T02:54:22.760Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-08T02:54:22.761Z] > authorizing via signed-in user (tjrwns3650@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-11-08T02:54:28.734Z] Using project from CLI flag: vueclass55
+[debug] [2022-11-08T02:54:28.737Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vueclass55 [none]
+[debug] [2022-11-08T02:54:29.224Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vueclass55 200
+[debug] [2022-11-08T02:54:29.224Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vueclass55 {"projectId":"vueclass55","projectNumber":"53819134390","displayName":"vueclass55","name":"projects/vueclass55","resources":{"hostingSite":"vueclass55"},"state":"ACTIVE","etag":"1_a4b8ef2e-49e2-4d74-9bb3-0ea1049799c6"}
+[info] i  Using project vueclass55 (vueclass55) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] i  Skipping write of dist/404.html 
+[debug] [2022-11-08T02:54:43.443Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-11-08T02:54:43.669Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-11-08T02:54:43.669Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.13.0","browserURL":"https://www.gstatic.com/firebasejs/9.13.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.13.0/firebase.tgz"},"live":{"version":"9.13","browserURL":"https://www.gstatic.com/firebasejs/live/9.13/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.13/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.13.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.13.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.13.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.13.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.13.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.13.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.13.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.13.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.memory.js"}}
+[info] i  Skipping write of dist/index.html 
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[debug] [2022-11-08T02:54:50.001Z] Error: EPERM: operation not permitted, open 'C:\firebase.json'
+    at Object.openSync (node:fs:590:3)
+    at Object.writeFileSync (node:fs:2202:35)
+    at Config.writeProjectFile (C:\Users\김석준\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:153:12)
+    at C:\Users\김석준\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\init.js:170:16
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-11-08T02:55:47.839Z] ----------------------------------------------------------------------
+[debug] [2022-11-08T02:55:47.842Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\김석준\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-11-08T02:55:47.842Z] CLI Version:   11.16.0
+[debug] [2022-11-08T02:55:47.842Z] Platform:      win32
+[debug] [2022-11-08T02:55:47.843Z] Node Version:  v16.18.0
+[debug] [2022-11-08T02:55:47.843Z] Time:          Tue Nov 08 2022 11:55:47 GMT+0900 (대한민국 표준시)
+[debug] [2022-11-08T02:55:47.844Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-08T02:55:47.925Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-08T02:55:47.926Z] > authorizing via signed-in user (tjrwns3650@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-11-08T02:55:53.401Z] Using project from CLI flag: vueclass55
+[debug] [2022-11-08T02:55:53.403Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vueclass55 [none]
+[debug] [2022-11-08T02:55:53.921Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vueclass55 200
+[debug] [2022-11-08T02:55:53.921Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vueclass55 {"projectId":"vueclass55","projectNumber":"53819134390","displayName":"vueclass55","name":"projects/vueclass55","resources":{"hostingSite":"vueclass55"},"state":"ACTIVE","etag":"1_a4b8ef2e-49e2-4d74-9bb3-0ea1049799c6"}
+[info] i  Using project vueclass55 (vueclass55) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] i  Skipping write of dist/404.html 
+[debug] [2022-11-08T02:55:58.141Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-11-08T02:55:58.327Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-11-08T02:55:58.327Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.13.0","browserURL":"https://www.gstatic.com/firebasejs/9.13.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.13.0/firebase.tgz"},"live":{"version":"9.13","browserURL":"https://www.gstatic.com/firebasejs/live/9.13/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.13/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.13.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.13.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.13.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.13.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.13.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.13.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.13.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.13.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.memory.js"}}
+[info] i  Skipping write of dist/index.html 
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[debug] [2022-11-08T02:55:59.285Z] Error: EPERM: operation not permitted, open 'C:\firebase.json'
+    at Object.openSync (node:fs:590:3)
+    at Object.writeFileSync (node:fs:2202:35)
+    at Config.writeProjectFile (C:\Users\김석준\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:153:12)
+    at C:\Users\김석준\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\init.js:170:16
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-11-08T02:56:31.753Z] ----------------------------------------------------------------------
+[debug] [2022-11-08T02:56:31.755Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\김석준\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-11-08T02:56:31.756Z] CLI Version:   11.16.0
+[debug] [2022-11-08T02:56:31.756Z] Platform:      win32
+[debug] [2022-11-08T02:56:31.756Z] Node Version:  v16.18.0
+[debug] [2022-11-08T02:56:31.757Z] Time:          Tue Nov 08 2022 11:56:31 GMT+0900 (대한민국 표준시)
+[debug] [2022-11-08T02:56:31.757Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-08T02:56:31.848Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-08T02:56:31.849Z] > authorizing via signed-in user (tjrwns3650@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-11-08T02:56:35.285Z] Using project from CLI flag: vueclass55
+[debug] [2022-11-08T02:56:35.288Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vueclass55 [none]
+[debug] [2022-11-08T02:56:35.802Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vueclass55 200
+[debug] [2022-11-08T02:56:35.802Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vueclass55 {"projectId":"vueclass55","projectNumber":"53819134390","displayName":"vueclass55","name":"projects/vueclass55","resources":{"hostingSite":"vueclass55"},"state":"ACTIVE","etag":"1_a4b8ef2e-49e2-4d74-9bb3-0ea1049799c6"}
+[info] i  Using project vueclass55 (vueclass55) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] i  Skipping write of dist/404.html 
+[debug] [2022-11-08T02:56:40.710Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-11-08T02:56:40.990Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-11-08T02:56:40.990Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.13.0","browserURL":"https://www.gstatic.com/firebasejs/9.13.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.13.0/firebase.tgz"},"live":{"version":"9.13","browserURL":"https://www.gstatic.com/firebasejs/live/9.13/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.13/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.13.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.13.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.13.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.13.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.13.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.13.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.13.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.13.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.13.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore.memory.js"}}
+[info] i  Skipping write of dist/index.html 
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[debug] [2022-11-08T02:56:43.413Z] Error: EPERM: operation not permitted, open 'C:\firebase.json'
+    at Object.openSync (node:fs:590:3)
+    at Object.writeFileSync (node:fs:2202:35)
+    at Config.writeProjectFile (C:\Users\김석준\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:153:12)
+    at C:\Users\김석준\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\init.js:170:16
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
