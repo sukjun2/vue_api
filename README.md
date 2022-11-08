@@ -15,6 +15,9 @@ npm install axios
 ## gsap 설치
 npm install gsap   
 
+## 1차 완성
+firebase deploy : vueapi55.firebaseapp.com   
+
 ### 리액트 사이트1          --> 1. 퍼블리싱 --> 2. 데이터   
 ### 뷰 사이트1              --> 1. 퍼블리싱(숙제)   
 
