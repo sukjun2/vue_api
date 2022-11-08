@@ -24,6 +24,7 @@ npm install gsap
 
 firebase deploy : https://vueapi55.firebaseapp.com/  
 
+
 ### 리액트 사이트1          --> 1. 퍼블리싱 --> 2. 데이터   
 ### 뷰 사이트1              --> 1. 퍼블리싱(숙제)   
 
