@@ -26,7 +26,7 @@
                     modifier: 1,
                     slideShadows: false,
                   }"
-                  :pagination="true"
+                  :pagination="false"
                   :modules="modules"
                   class="mySwiper"
                 >
@@ -250,7 +250,7 @@ export default {
     .swiper {
       width: 100%;
       padding-top: 50px;
-      padding-bottom: 50px;
+      // padding-bottom: 50px;
     }
 
     .swiper-slide {
