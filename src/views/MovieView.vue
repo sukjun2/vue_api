@@ -14,7 +14,7 @@
                   :grabCursor="true"
                   :centeredSlides="true"
                   :slidesPerView="'auto'"
-                  :initialSlide="5"
+                  :initialSlide="3"
                   :autoplay="{
                     delay: 2500,
                     disableOnInteraction: false,
@@ -256,8 +256,7 @@ export default {
     .swiper-slide {
       background-position: center;
       background-size: cover;
-      width: 300px;
-      height: 500px;
+      width: 24%;
 
       li {
         position: relative;
