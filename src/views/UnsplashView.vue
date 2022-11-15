@@ -10,25 +10,19 @@
               <div class="slider__inner">
                 <h2>Unsplash Image</h2>
                 <swiper
-                  :effect="'coverflow'"
-                  :grabCursor="true"
-                  :centeredSlides="true"
                   :slidesPerView="'auto'"
+                  :centeredSlides="true"
+                  :spaceBetween="30"
                   :initialSlide="3"
+                  :pagination="{
+                    clickable: true,
+                  }"
+                  :modules="modules"
+                  class="mySwiper"
                   :autoplay="{
                     delay: 2500,
                     disableOnInteraction: false,
                   }"
-                  :coverflowEffect="{
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: false,
-                  }"
-                  :pagination="false"
-                  :modules="modules"
-                  class="mySwiper"
                 >
                   <swiper-slide v-for="slider in sliders" :key="slider.id">
                     <li>
@@ -83,9 +77,8 @@ import { ref } from "vue";
 // import { response } from "express";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
-import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { EffectCoverflow, Pagination, Autoplay } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 
 export default {
   components: {
@@ -130,7 +123,7 @@ export default {
       search,
       SearchSplashes,
       RandomSplashes,
-      modules: [EffectCoverflow, Pagination, Autoplay],
+      modules: [Pagination, Autoplay],
     };
   },
 };
@@ -200,23 +193,43 @@ export default {
   h2 {
     color: var(--black);
     font-family: var(--font-sub2);
+    margin-bottom: 10px;
   }
 
   .slider__inner {
     .swiper {
       width: 100%;
-      padding-top: 50px;
+      height: 400px;
       // padding-bottom: 50px;
+      border: 1px solid #000;
+
+      .swiper-horizontal > .swiper-pagination-bullets,
+      .swiper-pagination-bullets.swiper-pagination-horizontal,
+      .swiper-pagination-custom,
+      .swiper-pagination-fraction {
+        padding-top: 5px;
+        border-top: 1px solid #000;
+      }
+
+      .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+      .swiper-pagination-horizontal.swiper-pagination-bullets
+        .swiper-pagination-bullet {
+        background-color: #000;
+      }
     }
 
     .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 24%;
+      width: 18%;
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       li {
         position: relative;
         transition: all 0.3s ease-in-out;
+        margin-bottom: 50px;
 
         &:hover {
           transform: scale(1.05);
@@ -225,7 +238,7 @@ export default {
         a {
           color: var(--black);
 
-          img {
+          .swiper-slide img {
             display: block;
             width: 100%;
           }
