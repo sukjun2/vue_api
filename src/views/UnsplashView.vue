@@ -69,9 +69,7 @@ export default {
     SearchSplashes();
 
     const RandomSplashes = async () => {
-      await fetch(
-        "https://api.unsplash.com/photos/random?client_id=sf6Q68YlU2mVvJqWMapJjCgVSQShpVebqPohf5BOb08&count=20"
-      )
+      await fetch("https://sukjun2.github.io/vue_api/src/utils/unsplash.json")
         .then((response) => response.json())
         .then((result) => (splashes.value = result))
         .catch((error) => console.log(error));
