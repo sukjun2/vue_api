@@ -74,7 +74,10 @@
               <div class="movie__list">
                 <ul>
                   <li v-for="movie in movies" :key="movie.id">
-                    <a :href="`https://www.themoviedb.org/movie/${movie.id}`">
+                    <a
+                      :href="`https://www.themoviedb.org/movie/${movie.id}`"
+                      target="_blank"
+                    >
                       <img
                         :src="`https://image.tmdb.org/t/p/w500/${movie.poster_path}`"
                         :alt="movie.title"
@@ -153,6 +156,7 @@ export default {
       sliders,
       search,
       SearchMoives,
+      TopMovies,
       modules: [EffectCoverflow, Pagination, Autoplay],
     };
   },
