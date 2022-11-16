@@ -87,21 +87,22 @@ export default {
         padding: 15px 20px;
       }
       .num {
-        flex: 1 1 5%;
+        flex: 1 1 6%;
         text-align: center;
         border-right: 1px solid var(--bg-dark-border);
       }
       .name {
-        flex: 1 1 20%;
+        flex: 1 1 19%;
         border-right: 1px solid var(--bg-dark-border);
       }
       .desc {
         flex: 1 1 60%;
-        border-right: 1px solid var(--bg-dark-border);
+        padding: 0 20px;
       }
       .star {
         flex: 1 1 15%;
         text-align: center;
+        border-left: 1px solid var(--bg-dark-border);
       }
     }
   }
