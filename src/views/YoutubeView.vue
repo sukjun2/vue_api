@@ -10,25 +10,15 @@
               <div class="slider__inner">
                 <h2>Youtube</h2>
                 <swiper
-                  :effect="'coverflow'"
+                  :effect="'cards'"
                   :grabCursor="true"
-                  :centeredSlides="true"
-                  :slidesPerView="'auto'"
+                  :modules="modules"
+                  class="mySwiper"
                   :initialSlide="3"
                   :autoplay="{
                     delay: 2500,
                     disableOnInteraction: false,
                   }"
-                  :coverflowEffect="{
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: false,
-                  }"
-                  :pagination="false"
-                  :modules="modules"
-                  class="mySwiper"
                 >
                   <swiper-slide v-for="slider in sliders" :key="slider.id">
                     <li>
@@ -89,9 +79,9 @@ import { ref } from "vue";
 
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import { EffectCoverflow, Pagination, Autoplay } from "swiper";
+
+import "swiper/css/effect-cards";
+import { EffectCards, Autoplay } from "swiper";
 
 export default {
   components: {
@@ -137,7 +127,7 @@ export default {
       search,
       SearchYoutubes,
       RandomYoutubes,
-      modules: [EffectCoverflow, Pagination, Autoplay],
+      modules: [EffectCards, Autoplay],
     };
   },
 };
@@ -222,7 +212,7 @@ export default {
 
   .slider__inner {
     .swiper {
-      width: 100%;
+      width: 50%;
       padding-top: 50px;
       // padding-bottom: 50px;
     }
@@ -230,7 +220,8 @@ export default {
     .swiper-slide {
       background-position: center;
       background-size: cover;
-      width: 24%;
+      width: 100%;
+      border-radius: 20px;
 
       li {
         position: relative;
